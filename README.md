@@ -1,9 +1,15 @@
 # [Learn Rx](http://reactivex.io/learnrx/)
 
-**All the content with correct answers are listed below**
+I'm trying to [Learn Rx](http://reactivex.io/learnrx/). The tut on their site is awesome, but I wanted to be able to work locally and make notes and stuff since I suck at this stuff.
 
-**Some lessons will need to be done from the site**
+The `master` branch has most of the lessons. They are left for you to complete. Reference this README file for the answers. All the content with correct answers are listed below.
 
+*Some lessons will need to be done from the site*
+
+#### So
+Clone it if you like and do the challenges locally. I'm working my way through it on the `working` branch.
+
+---
 
 ## Functional Programming in Javascript
 
