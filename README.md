@@ -1,5 +1,9 @@
 # [Learn Rx](http://reactivex.io/learnrx/)
 
+**All the content with correct answers are listed below**
+
+**Some lessons will need to be done from the site**
+
 
 ## Functional Programming in Javascript
 

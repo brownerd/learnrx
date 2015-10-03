@@ -8,17 +8,12 @@ import openURL from 'opn'
 import watchify from 'watchify'
 import babelify from 'babelify'
 
-import lessons from 'lessons/lesson-index'
+import lessons from './lessons/lesson-index.json'
 
 const browser = 'google chrome'
 const argv = yargs
     .usage('Usage: -f [num]')
     .argv
-
-const docs = [
-  '01-index.js',
-  '02-another-file.js'
-]
 
 const entry = `./lessons/${lessons[argv.f - 1]}`
 
