@@ -8,6 +8,8 @@ import openURL from 'opn'
 import watchify from 'watchify'
 import babelify from 'babelify'
 
+import lessons from 'lessons/lesson-index'
+
 const browser = 'google chrome'
 const argv = yargs
     .usage('Usage: -f [num]')
@@ -18,7 +20,7 @@ const docs = [
   '02-another-file.js'
 ]
 
-const entry = `./${docs[argv.f - 1]}`
+const entry = `./lessons/${lessons[argv.f - 1]}`
 
 //the development task
 gulp.task('default', function(cb) {
@@ -33,7 +35,7 @@ gulp.task('default', function(cb) {
     live: true,            //live reload & CSS injection
     verbose: true,         //verbose watchify logging
     //dir: 'app',            //directory to serve
-    //transform: babelify,   //browserify transforms
+    transform: babelify,   //browserify transforms
     plugin: errorify       //display errors in browser
   })
   .on('exit', cb)
